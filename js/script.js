@@ -1,12 +1,24 @@
+const container = document.querySelector('.container');
+
+
 for (let numero = 1; numero <= 100; numero++) {
+
     if ((numero % 5 == 0)&&(numero % 3 == 0)) {
-        console.log('fitzbuzz');
+        div = document.createElement( 'div' );
+        div.innerHTML = 'FitzBuzz';
+        container.appendChild(div);       
     } else if (numero % 5 == 0) {
-        console.log('buzz');
+        div = document.createElement( 'div' );
+        div.innerHTML = 'Buzz';
+        container.appendChild(div); 
     } else if (numero % 3 == 0) {
-        console.log('fitz');
+        div = document.createElement( 'div' );
+        div.innerHTML = 'Fitz';
+        container.appendChild(div); 
     } else {
-        console.log(numero);
+        div = document.createElement( 'div' );
+        div.innerHTML = numero;
+        container.appendChild(div); 
     }
 
 };

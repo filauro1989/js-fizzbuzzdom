@@ -31,6 +31,6 @@ for (let numero = 1; numero <= 100; numero++) {
         container.appendChild(div);
         div.className += "square blu-bg";
 
-    }
+    };
 
 };
